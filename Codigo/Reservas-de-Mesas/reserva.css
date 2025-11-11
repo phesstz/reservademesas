@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  gap: 2rem;
+  background-color: #f4a997;
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-section,
+.imagem-section {
+  width: 40%; /* deixa as seções mais equilibradas */
+}
+
+.imagem-section {
+  background-color: #e43a2e;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.campo label {
+  font-weight: bold;
+  color: #4c2c2c;
+}
+
+.campo input,
+.campo select {
+  background-color: #8b3d3d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #8b3d3d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.cancelar {
+  background-color: #a44;
+}
+
+.imagem-section {
+  width: 45%;
+  background-color: #e43a2e;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.imagem-section img {
+  width: 60%;
+  margin-top: 1rem;
+  border-radius: 12px;
+}
+
+.confirmacao {
+  background-color: #8b3d3d;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-section,
+  .imagem-section {
+    width: 100%;
+  }
+
+  .imagem-section img {
+    width: 80%;
+  }
+}
